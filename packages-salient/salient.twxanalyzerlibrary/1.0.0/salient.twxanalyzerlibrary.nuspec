@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Salient.TWXAnalyzerLibrary</id>
+    <version>1.0.0</version>
+    <title>Salient TWX Analyzer Library</title>
+    <authors>Salient Process</authors>
+    <icon>images\SP-Logo-fav.png</icon>
+    <projectUrl>https://salientprocess.com/twx-analyzer-migrator/</projectUrl>
+    <description>Salient TWX Analyzer Library</description>
+    <releaseNotes>First version of package.</releaseNotes>
+    <copyright>Copyright ©  2017</copyright>
+    <tags>Salient Process TWX Analyzer Library</tags>
+    <dependencies>
+      <dependency id="Microsoft.Office.Interop.Excel" version="15.0.4795.1000" />
+    </dependencies>
+  </metadata>
+</package>

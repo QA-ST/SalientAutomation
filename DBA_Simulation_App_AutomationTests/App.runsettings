@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+	<!-- Parameters used by tests at run time -->
+	<TestRunParameters>
+		<Parameter name="WebsiteURLTest" value="https://dev.mybusinesscompass.com" />
+		<Parameter name="Email" value="arana@salientprocess.com" />
+		<Parameter name="Password" value="Sss1234!" />
+		<Parameter name="HomeURLTest" value="https://dev.mybusinesscompass.com/Home" />
+		<Parameter name="InvalidEmail" value="abc@salientprocess.com" />
+		<Parameter name="InvalidPassword" value="123"  />
+		<Parameter name="DownloadPath" value= "C:\vsts-agent-win-x64-2.206.1\_work\r2\a\_DevEnv-DevelopBranch-ACProject\drop\Downloads"/>
+		
+	</TestRunParameters>
+</RunSettings>
