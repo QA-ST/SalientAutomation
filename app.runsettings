@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RunSettings>
+	<TestRunParameters>
+		<Parameter name="WebsiteURLTest" value="https://devv4.businesscompass.com/"/>
+		<Parameter name="Email" value="khushboo+1@businesscompass.com" />
+		<Parameter name="Password" value="Abcd1234!" />
+	</TestRunParameters>
+</RunSettings>
+

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:ns2="http://www.ibm.com/bpm/Extensions" xmlns:ns3="http://www.ibm.com/xmlns/prod/bpm/bpmn/ext/process" xmlns:ns4="http://www.omg.org/spec/DD/20100524/DI" xmlns:ns5="http://www.omg.org/spec/DD/20100524/DC" xmlns:ns6="http://www.omg.org/spec/BPMN/20100524/DI" id="bpmn-12fa0dc6-fd4d-481e-8c66-5650b4150fab" targetNamespace="http://www.ibm.com/WebSphere/bpm/BlueworksLive/10000a39f570f40-10000259fe5dce6" exporter="http://www.ibm.com/WebSphere/bpm/BlueworksLive" exporterVersion="2.0" xmlns:tns="http://www.ibm.com/WebSphere/bpm/BlueworksLive/10000a39f570f40-10000259fe5dce6" xmlns:io="SalientProcess_LLC" xmlns:res="http://www.ibm.com/WebSphere/bpm/BlueworksLive/Resources" xmlns:bwl0="http://www.ibm.com/WebSphere/bpm/BlueworksLive/Glossaries">
+    <import namespace="http://www.ibm.com/WebSphere/bpm/BlueworksLive/Glossaries" location="../Glossaries.bpmn" importType="http://www.omg.org/spec/BPMN/20100524/MODEL"/>
+    <import namespace="http://www.ibm.com/WebSphere/bpm/BlueworksLive/Resources" location="../Resources.bpmn" importType="http://www.omg.org/spec/BPMN/20100524/MODEL"/>
+    <import namespace="SalientProcess_LLC" location="../InputOutput.xsd" importType="http://www.w3.org/2001/XMLSchema"/>
+    <process processType="Private" isExecutable="false" name="Deloitte Test" id="bpmn-b7f6c8ff-3967-4643-bcd2-1f2f6a28d8bf">
+        <extensionElements>
+            <ns2:bpmAttributes>
+                <ns2:milestones id="bpmn-ed93e239-b8c9-4af2-951d-f2f9202e340e">
+                    <ns2:milestone name="Milestone 1" id="bpmn-fec933ab-5437-4661-affb-c32906ce969d">
+                        <flowNodeRef>bpmn-c34c2061-0eaa-473a-a530-85cc2988da05</flowNodeRef>
+                        <flowNodeRef>bpmn-7bf32fde-c592-44da-8cc6-5f3d60869314</flowNodeRef>
+                        <flowNodeRef>bpmn-51aff2d4-0076-4921-8a49-b62e0179a885</flowNodeRef>
+                        <flowNodeRef>bpmn-3e1cff9c-1667-4261-98ef-5c98027da700</flowNodeRef>
+                        <flowNodeRef>bpmn-1adf70cf-23f4-4afd-94d2-dc77fd7a39e5</flowNodeRef>
+                        <flowNodeRef>bpmn-9c2fd045-4e8a-4674-bc54-4097c28f2b0c</flowNodeRef>
+                        <flowNodeRef>bpmn-b61ddbd2-cc1d-4fd0-8392-c2b8899c9181</flowNodeRef>
+                        <flowNodeRef>bpmn-0e4bbd41-df35-4eca-9e0c-c2426ec70cb8</flowNodeRef>
+                        <flowNodeRef>bpmn-0a9c71ee-d09d-406f-bebf-2185a338d463</flowNodeRef>
+                        <flowNodeRef>bpmn-3b6690cc-56c4-4165-b8e9-d211fe4bb212</flowNodeRef>
+                        <flowNodeRef>bpmn-562b518f-e93e-4115-b63e-0588eae5eacf</flowNodeRef>
+                        <flowNodeRef>bpmn-bfbe8964-6baf-417c-8364-2beb2488b4bd</flowNodeRef>
+                    </ns2:milestone>
+                </ns2:milestones>
+                <ns2:properties/>
+            </ns2:bpmAttributes>
+        </extensionElements>
+        <laneSet id="bpmn-7ef4707b-ae03-415e-b6c1-a724ba2be479">
+            <lane name="Lead Accounting Technician" id="bpmn-20f61997-aa33-4bb1-8965-bc5127a43f35">
+                <flowNodeRef>bpmn-c34c2061-0eaa-473a-a530-85cc2988da05</flowNodeRef>
+                <flowNodeRef>bpmn-7bf32fde-c592-44da-8cc6-5f3d60869314</flowNodeRef>
+                <flowNodeRef>bpmn-51aff2d4-0076-4921-8a49-b62e0179a885</flowNodeRef>
+                <flowNodeRef>bpmn-3e1cff9c-1667-4261-98ef-5c98027da700</flowNodeRef>
+                <flowNodeRef>bpmn-1adf70cf-23f4-4afd-94d2-dc77fd7a39e5</flowNodeRef>
+                <flowNodeRef>bpmn-9c2fd045-4e8a-4674-bc54-4097c28f2b0c</flowNodeRef>
+                <flowNodeRef>bpmn-b61ddbd2-cc1d-4fd0-8392-c2b8899c9181</flowNodeRef>
+                <flowNodeRef>bpmn-0e4bbd41-df35-4eca-9e0c-c2426ec70cb8</flowNodeRef>
+                <flowNodeRef>bpmn-0a9c71ee-d09d-406f-bebf-2185a338d463</flowNodeRef>
+                <flowNodeRef>bpmn-3b6690cc-56c4-4165-b8e9-d211fe4bb212</flowNodeRef>
+            </lane>
+            <lane name="Accounting Technician" id="bpmn-fc2de9c3-c3c3-433b-8ab5-65ca830be018">
+                <flowNodeRef>bpmn-562b518f-e93e-4115-b63e-0588eae5eacf</flowNodeRef>
+                <flowNodeRef>bpmn-bfbe8964-6baf-417c-8364-2beb2488b4bd</flowNodeRef>
+            </lane>
+        </laneSet>
+        <sequenceFlow sourceRef="bpmn-c34c2061-0eaa-473a-a530-85cc2988da05" targetRef="bpmn-7bf32fde-c592-44da-8cc6-5f3d60869314" id="bpmn-50cd3ba7-3881-4440-be95-b4222b530b45"/>
+        <sequenceFlow sourceRef="bpmn-7bf32fde-c592-44da-8cc6-5f3d60869314" targetRef="bpmn-51aff2d4-0076-4921-8a49-b62e0179a885" id="bpmn-4e36e0fd-143a-4d82-a9ce-8d97afa39f91"/>
+        <sequenceFlow sourceRef="bpmn-51aff2d4-0076-4921-8a49-b62e0179a885" targetRef="bpmn-3e1cff9c-1667-4261-98ef-5c98027da700" id="bpmn-0afe367e-b028-4315-a85a-667187e92a67"/>
+        <sequenceFlow sourceRef="bpmn-3e1cff9c-1667-4261-98ef-5c98027da700" targetRef="bpmn-1adf70cf-23f4-4afd-94d2-dc77fd7a39e5" id="bpmn-b06ec890-b4fb-4bce-9d58-776d2b5408cf"/>
+        <sequenceFlow sourceRef="bpmn-1adf70cf-23f4-4afd-94d2-dc77fd7a39e5" targetRef="bpmn-9c2fd045-4e8a-4674-bc54-4097c28f2b0c" id="bpmn-7dd05ab1-4507-4db9-94a2-f53678f37795"/>
+        <sequenceFlow sourceRef="bpmn-9c2fd045-4e8a-4674-bc54-4097c28f2b0c" targetRef="bpmn-b61ddbd2-cc1d-4fd0-8392-c2b8899c9181" name="Yes" id="bpmn-501c7a2e-9b23-412c-9711-6a8db877d38d"/>
+        <sequenceFlow sourceRef="bpmn-b61ddbd2-cc1d-4fd0-8392-c2b8899c9181" targetRef="bpmn-0e4bbd41-df35-4eca-9e0c-c2426ec70cb8" id="bpmn-fbb7a638-2338-46c6-b662-f65587c8c76f"/>
+        <sequenceFlow sourceRef="bpmn-9c2fd045-4e8a-4674-bc54-4097c28f2b0c" targetRef="bpmn-0a9c71ee-d09d-406f-bebf-2185a338d463" name="No" id="bpmn-dce72f35-8b5a-405b-ad86-ef53f09fedfd"/>
+        <sequenceFlow sourceRef="bpmn-0a9c71ee-d09d-406f-bebf-2185a338d463" targetRef="bpmn-3b6690cc-56c4-4165-b8e9-d211fe4bb212" id="bpmn-5c8b7ee9-2c5c-4aae-bac6-cd0fb62be322"/>
+        <sequenceFlow sourceRef="bpmn-3b6690cc-56c4-4165-b8e9-d211fe4bb212" targetRef="bpmn-562b518f-e93e-4115-b63e-0588eae5eacf" id="bpmn-5ca4237f-815d-4e44-b922-27213bb2efda"/>
+        <sequenceFlow sourceRef="bpmn-562b518f-e93e-4115-b63e-0588eae5eacf" targetRef="bpmn-bfbe8964-6baf-417c-8364-2beb2488b4bd" id="bpmn-1e2c169a-7fed-4ee3-bb29-0f32c47cd28a"/>
+        <sequenceFlow sourceRef="bpmn-0e4bbd41-df35-4eca-9e0c-c2426ec70cb8" targetRef="bpmn-51aff2d4-0076-4921-8a49-b62e0179a885" id="bpmn-0a6d989c-3b05-4b6b-b972-451df6f2b72a"/>
+        <startEvent name="Start" id="bpmn-c34c2061-0eaa-473a-a530-85cc2988da05"/>
+        <task name="Retrieve IPACs from Treasury GOALS II IPAC System" id="bpmn-7bf32fde-c592-44da-8cc6-5f3d60869314">
+            <performer name="Lead Accounting Technician">
+                <resourceRef xmlns:res="http://www.ibm.com/WebSphere/bpm/BlueworksLive/Resources">res:bpmn-20f61997-aa33-4bb1-8965-bc5127a43f35</resourceRef>
+            </performer>
+        </task>
+        <task name="Separate pages of IPAC PDFs by Treasury Account Symbol (TAS)" id="bpmn-51aff2d4-0076-4921-8a49-b62e0179a885">
+            <performer name="Lead Accounting Technician">
+                <resourceRef xmlns:res="http://www.ibm.com/WebSphere/bpm/BlueworksLive/Resources">res:bpmn-20f61997-aa33-4bb1-8965-bc5127a43f35</resourceRef>
+            </performer>
+        </task>
+        <task name="Save IPAC CSV as Excel spreadsheet file" id="bpmn-3e1cff9c-1667-4261-98ef-5c98027da700">
+            <performer name="Lead Accounting Technician">
+                <resourceRef xmlns:res="http://www.ibm.com/WebSphere/bpm/BlueworksLive/Resources">res:bpmn-20f61997-aa33-4bb1-8965-bc5127a43f35</resourceRef>
+            </performer>
+        </task>
+        <task name="Upload PDF version of IPACs into Import Tool" id="bpmn-1adf70cf-23f4-4afd-94d2-dc77fd7a39e5">
+            <performer name="Lead Accounting Technician">
+                <resourceRef xmlns:res="http://www.ibm.com/WebSphere/bpm/BlueworksLive/Resources">res:bpmn-20f61997-aa33-4bb1-8965-bc5127a43f35</resourceRef>
+            </performer>
+        </task>
+        <exclusiveGateway gatewayDirection="Diverging" name="Errors?" id="bpmn-9c2fd045-4e8a-4674-bc54-4097c28f2b0c"/>
+        <task name="Generate Error Report" id="bpmn-b61ddbd2-cc1d-4fd0-8392-c2b8899c9181">
+            <performer name="Lead Accounting Technician">
+                <resourceRef xmlns:res="http://www.ibm.com/WebSphere/bpm/BlueworksLive/Resources">res:bpmn-20f61997-aa33-4bb1-8965-bc5127a43f35</resourceRef>
+            </performer>
+        </task>
+        <task name="Review Error Report and Remediate" id="bpmn-0e4bbd41-df35-4eca-9e0c-c2426ec70cb8">
+            <performer name="Lead Accounting Technician">
+                <resourceRef xmlns:res="http://www.ibm.com/WebSphere/bpm/BlueworksLive/Resources">res:bpmn-20f61997-aa33-4bb1-8965-bc5127a43f35</resourceRef>
+            </performer>
+        </task>
+        <task name="Create/Update record in FOQ" id="bpmn-0a9c71ee-d09d-406f-bebf-2185a338d463">
+            <performer name="Lead Accounting Technician">
+                <resourceRef xmlns:res="http://www.ibm.com/WebSphere/bpm/BlueworksLive/Resources">res:bpmn-20f61997-aa33-4bb1-8965-bc5127a43f35</resourceRef>
+            </performer>
+        </task>
+        <task name="Assign IPACs to AT for processing in FOQ Request Monitor module" id="bpmn-3b6690cc-56c4-4165-b8e9-d211fe4bb212">
+            <performer name="Lead Accounting Technician">
+                <resourceRef xmlns:res="http://www.ibm.com/WebSphere/bpm/BlueworksLive/Resources">res:bpmn-20f61997-aa33-4bb1-8965-bc5127a43f35</resourceRef>
+            </performer>
+        </task>
+        <task name="Review FOQ queue to begin intake assignments" id="bpmn-562b518f-e93e-4115-b63e-0588eae5eacf">
+            <performer name="Accounting Technician">
+                <resourceRef xmlns:res="http://www.ibm.com/WebSphere/bpm/BlueworksLive/Resources">res:bpmn-fc2de9c3-c3c3-433b-8ab5-65ca830be018</resourceRef>
+            </performer>
+        </task>
+        <endEvent name="End" id="bpmn-bfbe8964-6baf-417c-8364-2beb2488b4bd"/>
+    </process>
+    <ns6:BPMNDiagram id="bpmn-1cb90e66-8d8a-44f6-be49-98275494e6ee">
+        <ns6:BPMNPlane xmlns:ns7="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns="" bpmnElement="bpmn-b7f6c8ff-3967-4643-bcd2-1f2f6a28d8bf">
+            <ns6:BPMNShape bpmnElement="bpmn-fec933ab-5437-4661-affb-c32906ce969d" isHorizontal="false" isExpanded="false">
+                <ns5:Bounds x="0.0" y="0.0" width="1024.0" height="376.0"/>
+                <ns6:BPMNLabel xmlns:ns9="http://www.ibm.com/WebSphere/bpm/BlueworksLive/10000a39f570f40-10000259fe5dce6" labelStyle="ns9:bpmn-c55578f8-7b6c-4ec3-86b7-7e7e874caec5"/>
+            </ns6:BPMNShape>
+            <ns6:BPMNShape bpmnElement="bpmn-20f61997-aa33-4bb1-8965-bc5127a43f35" isHorizontal="true" isExpanded="false">
+                <ns5:Bounds x="48.0" y="48.0" width="1024.0" height="264.0"/>
+                <ns6:BPMNLabel xmlns:ns9="http://www.ibm.com/WebSphere/bpm/BlueworksLive/10000a39f570f40-10000259fe5dce6" labelStyle="ns9:bpmn-c55578f8-7b6c-4ec3-86b7-7e7e874caec5"/>
+            </ns6:BPMNShape>
+            <ns6:BPMNShape bpmnElement="bpmn-fc2de9c3-c3c3-433b-8ab5-65ca830be018" isHorizontal="true" isExpanded="false">
+                <ns5:Bounds x="48.0" y="312.0" width="1024.0" height="112.0"/>
+                <ns6:BPMNLabel xmlns:ns9="http://www.ibm.com/WebSphere/bpm/BlueworksLive/10000a39f570f40-10000259fe5dce6" labelStyle="ns9:bpmn-c55578f8-7b6c-4ec3-86b7-7e7e874caec5"/>
+            </ns6:BPMNShape>
+            <ns6:BPMNEdge bpmnElement="bpmn-50cd3ba7-3881-4440-be95-b4222b530b45" sourceElement="bpmn-c34c2061-0eaa-473a-a530-85cc2988da05" targetElement="bpmn-7bf32fde-c592-44da-8cc6-5f3d60869314">
+                <ns4:waypoint x="88.0" y="176.0"/>
+                <ns4:waypoint x="120.0" y="176.0"/>
+            </ns6:BPMNEdge>
+            <ns6:BPMNEdge bpmnElement="bpmn-4e36e0fd-143a-4d82-a9ce-8d97afa39f91" sourceElement="bpmn-7bf32fde-c592-44da-8cc6-5f3d60869314" targetElement="bpmn-51aff2d4-0076-4921-8a49-b62e0179a885">
+                <ns4:waypoint x="216.0" y="176.0"/>
+                <ns4:waypoint x="248.0" y="176.0"/>
+            </ns6:BPMNEdge>
+            <ns6:BPMNEdge bpmnElement="bpmn-0afe367e-b028-4315-a85a-667187e92a67" sourceElement="bpmn-51aff2d4-0076-4921-8a49-b62e0179a885" targetElement="bpmn-3e1cff9c-1667-4261-98ef-5c98027da700">
+                <ns4:waypoint x="344.0" y="176.0"/>
+                <ns4:waypoint x="376.0" y="176.0"/>
+            </ns6:BPMNEdge>
+            <ns6:BPMNEdge bpmnElement="bpmn-b06ec890-b4fb-4bce-9d58-776d2b5408cf" sourceElement="bpmn-3e1cff9c-1667-4261-98ef-5c98027da700" targetElement="bpmn-1adf70cf-23f4-4afd-94d2-dc77fd7a39e5">
+                <ns4:waypoint x="472.0" y="176.0"/>
+                <ns4:waypoint x="504.0" y="176.0"/>
+            </ns6:BPMNEdge>
+            <ns6:BPMNEdge bpmnElement="bpmn-7dd05ab1-4507-4db9-94a2-f53678f37795" sourceElement="bpmn-1adf70cf-23f4-4afd-94d2-dc77fd7a39e5" targetElement="bpmn-9c2fd045-4e8a-4674-bc54-4097c28f2b0c">
+                <ns4:waypoint x="600.0" y="176.0"/>
+                <ns4:waypoint x="664.0" y="176.0"/>
+            </ns6:BPMNEdge>
+            <ns6:BPMNEdge bpmnElement="bpmn-501c7a2e-9b23-412c-9711-6a8db877d38d" sourceElement="bpmn-9c2fd045-4e8a-4674-bc54-4097c28f2b0c" targetElement="bpmn-b61ddbd2-cc1d-4fd0-8392-c2b8899c9181">
+                <ns4:waypoint x="696.0" y="176.0"/>
+                <ns4:waypoint x="776.0" y="176.0"/>
+                <ns6:BPMNLabel xmlns:ns9="http://www.ibm.com/WebSphere/bpm/BlueworksLive/10000a39f570f40-10000259fe5dce6" labelStyle="ns9:bpmn-c55578f8-7b6c-4ec3-86b7-7e7e874caec5"/>
+            </ns6:BPMNEdge>
+            <ns6:BPMNEdge bpmnElement="bpmn-fbb7a638-2338-46c6-b662-f65587c8c76f" sourceElement="bpmn-b61ddbd2-cc1d-4fd0-8392-c2b8899c9181" targetElement="bpmn-0e4bbd41-df35-4eca-9e0c-c2426ec70cb8">
+                <ns4:waypoint x="824.0" y="152.0"/>
+                <ns4:waypoint x="824.0" y="120.0"/>
+            </ns6:BPMNEdge>
+            <ns6:BPMNEdge bpmnElement="bpmn-dce72f35-8b5a-405b-ad86-ef53f09fedfd" sourceElement="bpmn-9c2fd045-4e8a-4674-bc54-4097c28f2b0c" targetElement="bpmn-0a9c71ee-d09d-406f-bebf-2185a338d463">
+                <ns4:waypoint x="680.0" y="192.0"/>
+                <ns4:waypoint x="680.0" y="264.0"/>
+                <ns4:waypoint x="776.0" y="264.0"/>
+                <ns6:BPMNLabel xmlns:ns9="http://www.ibm.com/WebSphere/bpm/BlueworksLive/10000a39f570f40-10000259fe5dce6" labelStyle="ns9:bpmn-c55578f8-7b6c-4ec3-86b7-7e7e874caec5"/>
+            </ns6:BPMNEdge>
+            <ns6:BPMNEdge bpmnElement="bpmn-5c8b7ee9-2c5c-4aae-bac6-cd0fb62be322" sourceElement="bpmn-0a9c71ee-d09d-406f-bebf-2185a338d463" targetElement="bpmn-3b6690cc-56c4-4165-b8e9-d211fe4bb212">
+                <ns4:waypoint x="872.0" y="264.0"/>
+                <ns4:waypoint x="904.0" y="264.0"/>
+            </ns6:BPMNEdge>
+            <ns6:BPMNEdge bpmnElement="bpmn-5ca4237f-815d-4e44-b922-27213bb2efda" sourceElement="bpmn-3b6690cc-56c4-4165-b8e9-d211fe4bb212" targetElement="bpmn-562b518f-e93e-4115-b63e-0588eae5eacf">
+                <ns4:waypoint x="952.0" y="296.0"/>
+                <ns4:waypoint x="952.0" y="328.0"/>
+            </ns6:BPMNEdge>
+            <ns6:BPMNEdge bpmnElement="bpmn-1e2c169a-7fed-4ee3-bb29-0f32c47cd28a" sourceElement="bpmn-562b518f-e93e-4115-b63e-0588eae5eacf" targetElement="bpmn-bfbe8964-6baf-417c-8364-2beb2488b4bd">
+                <ns4:waypoint x="1000.0" y="352.0"/>
+                <ns4:waypoint x="1032.0" y="352.0"/>
+            </ns6:BPMNEdge>
+            <ns6:BPMNEdge bpmnElement="bpmn-0a6d989c-3b05-4b6b-b972-451df6f2b72a" sourceElement="bpmn-0e4bbd41-df35-4eca-9e0c-c2426ec70cb8" targetElement="bpmn-51aff2d4-0076-4921-8a49-b62e0179a885">
+                <ns4:waypoint x="776.0" y="88.0"/>
+                <ns4:waypoint x="296.0" y="88.0"/>
+                <ns4:waypoint x="296.0" y="152.0"/>
+            </ns6:BPMNEdge>
+            <ns6:BPMNShape bpmnElement="bpmn-c34c2061-0eaa-473a-a530-85cc2988da05" isHorizontal="false" isExpanded="false">
+                <ns5:Bounds x="68.0" y="168.0" width="24.0" height="24.0"/>
+                <ns6:BPMNLabel xmlns:ns9="http://www.ibm.com/WebSphere/bpm/BlueworksLive/10000a39f570f40-10000259fe5dce6" labelStyle="ns9:bpmn-c55578f8-7b6c-4ec3-86b7-7e7e874caec5"/>
+            </ns6:BPMNShape>
+            <ns6:BPMNShape bpmnElement="bpmn-7bf32fde-c592-44da-8cc6-5f3d60869314" isHorizontal="false" isExpanded="false">
+                <ns5:Bounds x="120.0" y="152.0" width="96.0" height="56.0"/>
+                <ns6:BPMNLabel xmlns:ns9="http://www.ibm.com/WebSphere/bpm/BlueworksLive/10000a39f570f40-10000259fe5dce6" labelStyle="ns9:bpmn-c55578f8-7b6c-4ec3-86b7-7e7e874caec5"/>
+            </ns6:BPMNShape>
+            <ns6:BPMNShape bpmnElement="bpmn-51aff2d4-0076-4921-8a49-b62e0179a885" isHorizontal="false" isExpanded="false">
+                <ns5:Bounds x="248.0" y="152.0" width="96.0" height="56.0"/>
+                <ns6:BPMNLabel xmlns:ns9="http://www.ibm.com/WebSphere/bpm/BlueworksLive/10000a39f570f40-10000259fe5dce6" labelStyle="ns9:bpmn-c55578f8-7b6c-4ec3-86b7-7e7e874caec5"/>
+            </ns6:BPMNShape>
+            <ns6:BPMNShape bpmnElement="bpmn-3e1cff9c-1667-4261-98ef-5c98027da700" isHorizontal="false" isExpanded="false">
+                <ns5:Bounds x="376.0" y="152.0" width="96.0" height="56.0"/>
+                <ns6:BPMNLabel xmlns:ns9="http://www.ibm.com/WebSphere/bpm/BlueworksLive/10000a39f570f40-10000259fe5dce6" labelStyle="ns9:bpmn-c55578f8-7b6c-4ec3-86b7-7e7e874caec5"/>
+            </ns6:BPMNShape>
+            <ns6:BPMNShape bpmnElement="bpmn-1adf70cf-23f4-4afd-94d2-dc77fd7a39e5" isHorizontal="false" isExpanded="false">
+                <ns5:Bounds x="504.0" y="152.0" width="96.0" height="56.0"/>
+                <ns6:BPMNLabel xmlns:ns9="http://www.ibm.com/WebSphere/bpm/BlueworksLive/10000a39f570f40-10000259fe5dce6" labelStyle="ns9:bpmn-c55578f8-7b6c-4ec3-86b7-7e7e874caec5"/>
+            </ns6:BPMNShape>
+            <ns6:BPMNShape bpmnElement="bpmn-9c2fd045-4e8a-4674-bc54-4097c28f2b0c" isHorizontal="false" isExpanded="false">
+                <ns5:Bounds x="656.0" y="154.0" width="32.0" height="32.0"/>
+                <ns6:BPMNLabel xmlns:ns9="http://www.ibm.com/WebSphere/bpm/BlueworksLive/10000a39f570f40-10000259fe5dce6" labelStyle="ns9:bpmn-c55578f8-7b6c-4ec3-86b7-7e7e874caec5"/>
+            </ns6:BPMNShape>
+            <ns6:BPMNShape bpmnElement="bpmn-b61ddbd2-cc1d-4fd0-8392-c2b8899c9181" isHorizontal="false" isExpanded="false">
+                <ns5:Bounds x="776.0" y="152.0" width="96.0" height="56.0"/>
+                <ns6:BPMNLabel xmlns:ns9="http://www.ibm.com/WebSphere/bpm/BlueworksLive/10000a39f570f40-10000259fe5dce6" labelStyle="ns9:bpmn-c55578f8-7b6c-4ec3-86b7-7e7e874caec5"/>
+            </ns6:BPMNShape>
+            <ns6:BPMNShape bpmnElement="bpmn-0e4bbd41-df35-4eca-9e0c-c2426ec70cb8" isHorizontal="false" isExpanded="false">
+                <ns5:Bounds x="776.0" y="64.0" width="96.0" height="56.0"/>
+                <ns6:BPMNLabel xmlns:ns9="http://www.ibm.com/WebSphere/bpm/BlueworksLive/10000a39f570f40-10000259fe5dce6" labelStyle="ns9:bpmn-c55578f8-7b6c-4ec3-86b7-7e7e874caec5"/>
+            </ns6:BPMNShape>
+            <ns6:BPMNShape bpmnElement="bpmn-0a9c71ee-d09d-406f-bebf-2185a338d463" isHorizontal="false" isExpanded="false">
+                <ns5:Bounds x="776.0" y="240.0" width="96.0" height="56.0"/>
+                <ns6:BPMNLabel xmlns:ns9="http://www.ibm.com/WebSphere/bpm/BlueworksLive/10000a39f570f40-10000259fe5dce6" labelStyle="ns9:bpmn-c55578f8-7b6c-4ec3-86b7-7e7e874caec5"/>
+            </ns6:BPMNShape>
+            <ns6:BPMNShape bpmnElement="bpmn-3b6690cc-56c4-4165-b8e9-d211fe4bb212" isHorizontal="false" isExpanded="false">
+                <ns5:Bounds x="904.0" y="240.0" width="96.0" height="56.0"/>
+                <ns6:BPMNLabel xmlns:ns9="http://www.ibm.com/WebSphere/bpm/BlueworksLive/10000a39f570f40-10000259fe5dce6" labelStyle="ns9:bpmn-c55578f8-7b6c-4ec3-86b7-7e7e874caec5"/>
+            </ns6:BPMNShape>
+            <ns6:BPMNShape bpmnElement="bpmn-562b518f-e93e-4115-b63e-0588eae5eacf" isHorizontal="false" isExpanded="false">
+                <ns5:Bounds x="904.0" y="328.0" width="96.0" height="56.0"/>
+                <ns6:BPMNLabel xmlns:ns9="http://www.ibm.com/WebSphere/bpm/BlueworksLive/10000a39f570f40-10000259fe5dce6" labelStyle="ns9:bpmn-c55578f8-7b6c-4ec3-86b7-7e7e874caec5"/>
+            </ns6:BPMNShape>
+            <ns6:BPMNShape bpmnElement="bpmn-bfbe8964-6baf-417c-8364-2beb2488b4bd" isHorizontal="false" isExpanded="false">
+                <ns5:Bounds x="1036.0" y="344.0" width="24.0" height="24.0"/>
+                <ns6:BPMNLabel xmlns:ns9="http://www.ibm.com/WebSphere/bpm/BlueworksLive/10000a39f570f40-10000259fe5dce6" labelStyle="ns9:bpmn-c55578f8-7b6c-4ec3-86b7-7e7e874caec5"/>
+            </ns6:BPMNShape>
+        </ns6:BPMNPlane>
+        <ns6:BPMNLabelStyle id="{http://www.ibm.com/WebSphere/bpm/BlueworksLive/10000a39f570f40-10000259fe5dce6}bpmn-c55578f8-7b6c-4ec3-86b7-7e7e874caec5">
+            <ns5:Font name="HelveticaNeue-Light" size="10.0"/>
+        </ns6:BPMNLabelStyle>
+    </ns6:BPMNDiagram>
+</definitions>
+
